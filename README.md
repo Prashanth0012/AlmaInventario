@@ -1,113 +1,52 @@
-# AlmaInventario – Inventory Management System
+# AlmaInventario
+
+A full-featured ERP inventory management system built to handle real business operations — product catalog, stock tracking, supplier management, sales, and automated PDF invoicing.
 
 ## Overview
-AlmaInventario is a web-based Inventory Management System developed using PHP and MySQL. The system helps businesses manage products, suppliers, stock transactions, and sales in one platform. It allows users to track inventory, manage stock movement, generate invoices, and export reports.
 
----
+AlmaInventario was built to solve a common small-business problem: keeping inventory, purchases, and sales in sync without relying on spreadsheets. It handles the full flow from stock intake to sale to invoice generation.
 
 ## Features
 
-- User authentication with role-based access
-- Dashboard with inventory summary
-- Category management
-- Supplier management
-- Product management
-- Stock IN and Stock OUT tracking
-- Sales and cart system
-- Automatic invoice generation
-- PDF invoice export using FPDF
-- Inventory and sales reports
-- Export reports to CSV, Excel, and PDF
+- 📦 **Inventory Management** — Track products, categories, and stock levels in real time
+- 🏢 **Supplier Management** — Manage supplier records and purchase history
+- 💰 **Sales & Transactions** — Record sales and automatically update stock
+- 🧾 **PDF Invoice Generation** — Generate professional invoices via FPDF
+- 🔐 **Role-Based Access Control** — Different permission levels for admins and staff
+- 📊 **Stock Transaction History** — Full audit trail of inventory movement
 
----
+## Tech Stack
 
-## Technologies Used
+- **Backend:** PHP
+- **Database:** MySQL
+- **PDF Generation:** FPDF
+- **Frontend:** HTML/CSS/JavaScript
 
-Frontend
-- HTML
-- CSS
+## Screenshots
 
-Backend
-- PHP
+*[Add 2-3 screenshots here — dashboard, invoice output, and product/stock view work best. This is usually the single biggest factor in whether a recruiter keeps reading.]*
 
-Database
-- MySQL
+## Setup
 
-Libraries
-- FPDF
+```bash
+# Clone the repository
+git clone https://github.com/Prashanth0012/AlmaInventario.git
 
-Development Environment
-- XAMPP
-- phpMyAdmin
+# Import the database
+mysql -u [username] -p [database_name] < schema.sql
 
----
+# Configure database connection
+# Edit config.php with your DB credentials
 
-## Database Tables
+# Serve the application
+# Point your local server (Apache/XAMPP) to the project directory
+```
 
-- users
-- categories
-- suppliers
-- products
-- stock_transactions
-- sales
-- sale_items
+## Why I built this
 
-These tables store information related to users, products, suppliers, inventory transactions, and sales.
-
----
-
-## Folder Structure
-
-AlmaInventario
-│
-├── css
-├── database
-│   └── db_connection.php
-├── fpdf
-├── pages
-│   ├── dashboard.php
-│   ├── products.php
-│   ├── suppliers.php
-│   ├── stock_in.php
-│   ├── sales.php
-│   └── reports.php
-│
-├── login.php
-├── index.php
-└── logout.php
-
----
-
-## How to Run the Project
-
-1. Install XAMPP
-2. Copy the project folder into:
-
-C:\xampp\htdocs\
-
-3. Start Apache and MySQL
-4. Open phpMyAdmin
-5. Create a database named:
-
-almainventario
-
-6. Import the SQL file
-7. Run the project in your browser:
-
-http://localhost/AlmaInventario
-
----
-
-## Future Improvements
-
-- Low stock alerts
-- Barcode scanning
-- Advanced analytics dashboard
-- GST invoice support
-- Database backup and restore
-
----
+[1-2 sentences on the motivation — e.g. "Built to understand end-to-end ERP workflows: from stock intake through sales to compliant invoice generation, the kind of system small businesses actually run on."]
 
 ## Author
 
-Prashanth Nayak Sabhavathula
+**Prashanth Nayak**
+[LinkedIn](https://linkedin.com/in/prashanth-nayak-64444b213) · [GitHub](https://github.com/Prashanth0012)
